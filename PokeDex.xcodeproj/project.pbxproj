@@ -11,6 +11,11 @@
 		928D01BD2B171E5100D477DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D01BC2B171E5100D477DC /* ContentView.swift */; };
 		928D01BF2B171E5600D477DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928D01BE2B171E5600D477DC /* Assets.xcassets */; };
 		928D01C22B171E5600D477DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928D01C12B171E5600D477DC /* Preview Assets.xcassets */; };
+		928D01CA2B1738C600D477DC /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D01C92B1738C600D477DC /* PokemonModel.swift */; };
+		928D01CC2B17398E00D477DC /* PokemonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D01CB2B17398E00D477DC /* PokemonDetails.swift */; };
+		928D01CE2B1739CB00D477DC /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D01CD2B1739CB00D477DC /* Interactor.swift */; };
+		928D01D02B1739EC00D477DC /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D01CF2B1739EC00D477DC /* Repository.swift */; };
+		928D01D22B173A3300D477DC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D01D12B173A3300D477DC /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		928D01BC2B171E5100D477DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		928D01BE2B171E5600D477DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		928D01C12B171E5600D477DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		928D01C92B1738C600D477DC /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		928D01CB2B17398E00D477DC /* PokemonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetails.swift; sourceTree = "<group>"; };
+		928D01CD2B1739CB00D477DC /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		928D01CF2B1739EC00D477DC /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		928D01D12B173A3300D477DC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,10 @@
 			children = (
 				928D01BA2B171E5100D477DC /* PokeDexApp.swift */,
 				928D01BC2B171E5100D477DC /* ContentView.swift */,
+				928D01CD2B1739CB00D477DC /* Interactor.swift */,
+				928D01CF2B1739EC00D477DC /* Repository.swift */,
+				928D01D12B173A3300D477DC /* AppState.swift */,
+				928D01C82B171E5F00D477DC /* Model */,
 				928D01BE2B171E5600D477DC /* Assets.xcassets */,
 				928D01C02B171E5600D477DC /* Preview Content */,
 			);
@@ -65,6 +79,15 @@
 				928D01C12B171E5600D477DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		928D01C82B171E5F00D477DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928D01C92B1738C600D477DC /* PokemonModel.swift */,
+				928D01CB2B17398E00D477DC /* PokemonDetails.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +161,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				928D01BD2B171E5100D477DC /* ContentView.swift in Sources */,
+				928D01CA2B1738C600D477DC /* PokemonModel.swift in Sources */,
+				928D01CE2B1739CB00D477DC /* Interactor.swift in Sources */,
+				928D01D02B1739EC00D477DC /* Repository.swift in Sources */,
+				928D01CC2B17398E00D477DC /* PokemonDetails.swift in Sources */,
 				928D01BB2B171E5100D477DC /* PokeDexApp.swift in Sources */,
+				928D01D22B173A3300D477DC /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,19 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    @ObservedObject var appState: AppState
+    
+        var interactor: PokemonInteractor
+
+        var body: some View {
+            VStack{
+                List(appState.pokemons, id: \.name) { pokemon in
+                    HStack{
+                        Text(pokemon.name)
+//                        AsyncImage(url: URL(string: pokemon.sprites.frontDefault) ?? URL(string: "")!)
+                    }
+                }
+            }
+            .onAppear {
+                interactor.fetchPokemon(limit: 50)
+            }
         }
-        .padding()
-    }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
